@@ -60,9 +60,20 @@ body {
     font-size: 1.8rem;
     color: var(--text-color);
     margin-left: 4rem;
-    font-weight: 500;
+    /* font-weight: 500; */
     transition: 0.3 ease;
     border-bottom: 3px solid transparent;
+}
+
+.navbar a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: var(--main-color);
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transition: 0.4s;
 }
 
 .navbar a:hover,
@@ -85,17 +96,12 @@ section {
 .home {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 1.5rem;
 }
 
 .home-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-    justify-content: center;
-    margin-top: 3rem;
+    max-width: 600px;
 }
 
 span {
@@ -113,10 +119,14 @@ span {
 }
 
 .home-content h1 {
-    font-size: 7rem;
+    font-size: 4.8rem;
     font-weight: 700;
-    margin-top: 1.5rem;
-    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+
+.home-content h1 span {
+    color: var(--main-color);
 }
 
 .home-img {
@@ -291,6 +301,10 @@ span {
     text-align: center;
     margin: 5rem 0;
 }
+
+
+/** ABOUT SECTION */
+
 .education{
     padding: 100px 15px;
     background: var(--second-bg-color);
@@ -381,6 +395,9 @@ span {
     background-color: var(--bg-color);
     width: 50px;
 }
+
+/** SERVICES SECTION*/
+
 .services{
     background: var(--bg-color);
     color: black;
@@ -431,6 +448,70 @@ span {
     margin: auto;
 }
 
+/**PROJCET SECTION */
+
+.projects {
+    background: var(--bg-color);
+    color: black;
+    padding: 5rem 2rem;
+}
+
+.projects h2 {
+    margin-bottom: 5rem;
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.project-box {
+    background-color: var(--main-color);
+    height: 300px;
+    border-radius: 3rem;
+    border: 5px solid transparent;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.project-box:hover {
+    background: white;
+    color: black;
+    border: 5px solid var(--main-color);
+    transform: scale(1.03);
+}
+
+.project-box .project-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-height: 200px;
+    justify-content: left;
+    align-items: baseline;
+    padding: 5rem 5rem;
+}
+
+.project-info h4 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 2;
+}
+
+.project-info p {
+    font-size: 1.6rem;
+    font-weight: 600;
+    max-height: 100px;
+    line-height: 1.7;
+    margin: auto;
+}
+
+/** CONTACT SECTION*/
+
 .contact {
     background-color: var(--bg-color);
 }
@@ -438,6 +519,15 @@ span {
     margin-bottom: 3rem;
     color: white;
 }
+
+.contact p{
+    font-size: 1.6rem;
+    color: var(--text-color);
+    margin-bottom: 3rem;
+    text-align: center;
+    max-width: 800px;
+}
+
 .contact form{
     display: flex;
     align-items: center;
@@ -615,3 +705,6 @@ span {
         grid-template-columns: repeat(1,1fr);
     }
 }
+
+
+

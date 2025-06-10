@@ -19,6 +19,7 @@
             <a href="#home" class="active">Home</a>
             <a href="#education" class="active">Education</a>
             <a href="#services" class="active">Services</a>
+            <a href="#projects" class="active">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -144,6 +145,8 @@
     </section>
 
     <!-- <section class="testimonials" id="testimonials">
+
+
         <div class="testimonial-box">
             <h2 class="heading">Testimonials</h2>
 
@@ -169,25 +172,68 @@
         </div>
     </section> -->
 
+    <section class="projects" id="projects">
+        <h2 class="heading">🛠️ My <span>Projects</span></h2>
+
+        <div class="projects-container">
+            <div class="project-box">
+                <img src="project1.png" alt="Weather App">
+                <div class="project-info">
+                    <h4>🌤️ Weather Forecast App</h4>
+                    <p>A clean and intuitive weather forecast app that fetches real-time weather data using a public API. Built with HTML, CSS, and JavaScript.</p>
+                    <a href="https://ogor-stephen.github.io/Weather-Forecast-Application/" class="btn">View Project</a>
+            </div>
+        </div>
+
+        <div class="project-box">
+            <img src="project2.png" alt="Portfolio Website">
+            <div class="project-info">
+                <h4>🖥️ Portfolio Website</h4>
+                <p>This personal portfolio site you're on was built from scratch to reflect my frontend and design capabilities. It's fully responsive and animated.</p>
+                <a href="#" class="btn">You're Already Here!</a>
+            </div>
+        </div>
+
+        <div class="project-box">
+            <img src="project3.png" alt="AI Prompt Tool">
+            <div class="project-info">
+                <h4>🤖 AI Prompt Generator</h4>
+                <p>A tool that helps generate optimized prompts for large language models to streamline productivity and content creation workflows.</p>
+                <a href="https://github.com/OGOR-STEPHEN/ai-prompt-tool" class="btn">View Project</a>
+            </div>
+        </div>
+
+        <div class="project-box">
+            <img src="project2.png" alt="Portfolio Website">
+            <div class="project-info">
+                <h4>💡 AI Image Caption Generator</h4>
+                <p>A web app where users upload an image and get an auto-generated caption describing what's in it.</p>
+                <a href="#" class="btn">View Project</a>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
+        <p class="contact-text">Have a question or want to work together? Feel free to reach out!</p>
 
-        <form action="">
+        <form action="https://formspree.io/f/mdkzejdz" method="POST">
             <div class="input-group">
                 <div class="input-box">
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="Email">
+                    <input type="text" name="fullname" placeholder="Full Name" required> <!-- Added name -->
+                    <input type="email" name="email" placeholder="Email" required>       <!-- Added name -->
                 </div>
                 <div class="input-box">
-                    <input type="number" placeholder="Phone Number">
-                    <input type="text" placeholder="Subject">
+                    <input type="number" name="phone" placeholder="Phone Number">        <!-- Added name -->
+                    <input type="text" name="subject" placeholder="Subject" required>   <!-- Added name -->
                 </div>
             </div>
-
-              <div class="input-group2">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <div class="input-group2">
+                <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea> <!-- Added name -->
                 <input type="submit" value="Send Message" class="btn">
-              </div>
+            </div>
         </form>
     </section>
 
